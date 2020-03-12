@@ -1,13 +1,18 @@
 package com.aor.numbers;
 
+import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.manipulation.Sorter;
+import org.mockito.Mockito;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
+import static org.mockito.ArgumentMatchers.anyObject;
 
 public class ListAggregatorTest {
+
     List<Integer> helper(){
         List<Integer> list = new ArrayList<>();
         list.add(1);
@@ -63,6 +68,38 @@ public class ListAggregatorTest {
         assertEquals(1, min);
     }
 
+    private List<Integer> list;
+    private IListDeduplicator deduplicator;
+    private IListSorter sorter;
+
+    @Before
+    public void setup(){
+        list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(4);
+        list.add(2);
+
+        List<Integer> deduplicated = new ArrayList<>();
+        deduplicated.add(1);
+        deduplicated.add(2);
+        deduplicated.add(4);
+
+        deduplicator = Mockito.mock(IListDeduplicator.class);
+        Mockito.when(deduplicator.deduplicate(anyObject())).thenReturn(deduplicated);
+
+
+        List<Integer> sorted = new ArrayList<>();
+        sorted.add(1);
+        sorted.add(2);
+        sorted.add(4);
+
+        sorter = Mockito.mock(IListSorter.class);
+        Mockito.when(sorter.sort()).thenReturn(sorted);
+
+
+    }
+
     @Test
     public void distinct() {
 
@@ -71,6 +108,8 @@ public class ListAggregatorTest {
         int distinct = aggregator.distinct(new ListDeduplicator(helper()), new ListSorter(helper()));
 
         assertEquals(4, distinct);
+
+
     }
 
     @Test
@@ -108,6 +147,15 @@ public class ListAggregatorTest {
         ListAggregator aggregator = new ListAggregator(list);
 
         int distinct = aggregator.distinct(stub, stub);
+
+        assertEquals(3, distinct);
+    }
+
+    @Test
+    public void distinct_mockito(){
+        ListAggregator aggregator = new ListAggregator(list);
+
+        int distinct = aggregator.distinct(deduplicator, sorter);
 
         assertEquals(3, distinct);
     }
