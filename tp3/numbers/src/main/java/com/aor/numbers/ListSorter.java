@@ -31,9 +31,6 @@ public class ListSorter implements IListSorter{
         //Bug correction
         if (sorted.get(sorted.size() - 1) < sorted.get(sorted.size() - 2)) Collections.swap(sorted, sorted.size() - 2, sorted.size() - 1);
 
-        System.out.println("List:");
-        System.out.println(sorted);
-
         return sorted;
     }
 }
