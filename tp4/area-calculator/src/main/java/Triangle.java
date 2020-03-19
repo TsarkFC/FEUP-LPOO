@@ -26,4 +26,8 @@ public class Triangle implements Shape{
     public double getArea() {
         return base*height/2;
     }
+
+    public void draw() {
+        System.out.println(this.getClass().getName());
+    }
 }

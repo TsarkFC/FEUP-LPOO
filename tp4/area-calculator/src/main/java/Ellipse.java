@@ -25,4 +25,8 @@ public class Ellipse implements Shape{
     public double getArea(){
         return xradius * yradius * Math.PI;
     }
+
+    public void draw() {
+        System.out.println(this.getClass().getName());
+    }
 }

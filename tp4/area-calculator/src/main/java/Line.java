@@ -4,4 +4,8 @@ public class Line implements BasicShape{
     public Line(double length){
         this.length = length;
     }
+
+    public void draw() {
+        System.out.println(this.getClass().getName());
+    }
 }

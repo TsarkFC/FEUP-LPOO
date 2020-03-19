@@ -1,2 +1,3 @@
-public interface BasicShape {
+public interface BasicShape extends Drawable{
+    //void draw();
 }
