@@ -11,7 +11,7 @@ public class ListFilterer {
     }
 
     public List<Integer> filter(IListFilter filter){
-        List<Integer> ret = new ArrayList<>();
+        List<Integer> ret = new ArrayList<>(); 
 
         for (Integer number : list){
             if (filter.accept(number)) ret.add(number);

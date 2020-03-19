@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.numbers.ListFilterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-03-13T17:03:27" hostname="joao-XPS-13-9380" time="0.003">
+<testsuite name="com.aor.numbers.ListFilterTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-03-13T18:50:38" hostname="joao-XPS-13-9380" time="0.002">
   <properties/>
-  <testcase name="positiveFilterTest" classname="com.aor.numbers.ListFilterTest" time="0.002"/>
+  <testcase name="positiveFilterTest" classname="com.aor.numbers.ListFilterTest" time="0.001"/>
   <testcase name="divisibleByFilterTest" classname="com.aor.numbers.ListFilterTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
