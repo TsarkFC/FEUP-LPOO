@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringDrinkTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-03-26T19:10:40" hostname="joao-XPS-13-9380" time="0.55">
+<testsuite name="StringDrinkTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-03-26T19:53:56" hostname="joao-XPS-13-9380" time="0.247">
   <properties/>
-  <testcase name="happyHour" classname="StringDrinkTest" time="0.002"/>
-  <testcase name="stringDrink" classname="StringDrinkTest" time="0.001"/>
-  <testcase name="removeObserver" classname="StringDrinkTest" time="0.502"/>
-  <testcase name="stringInverter" classname="StringDrinkTest" time="0.001"/>
-  <testcase name="addObserver" classname="StringDrinkTest" time="0.007"/>
-  <testcase name="transformerGroup" classname="StringDrinkTest" time="0.031"/>
-  <testcase name="transformerComposite" classname="StringDrinkTest" time="0.003"/>
+  <testcase name="happyHour" classname="StringDrinkTest" time="0.0"/>
+  <testcase name="impatientStrategy" classname="StringDrinkTest" time="0.011"/>
+  <testcase name="stringDrink" classname="StringDrinkTest" time="0.0"/>
+  <testcase name="removeObserver" classname="StringDrinkTest" time="0.226"/>
+  <testcase name="smartStrategyStartClosed" classname="StringDrinkTest" time="0.001"/>
+  <testcase name="stringInverter" classname="StringDrinkTest" time="0.0"/>
+  <testcase name="smartStrategyStartOpened" classname="StringDrinkTest" time="0.0"/>
+  <testcase name="addObserver" classname="StringDrinkTest" time="0.004"/>
+  <testcase name="orderStringRecipe" classname="StringDrinkTest" time="0.0"/>
+  <testcase name="transformerGroup" classname="StringDrinkTest" time="0.0"/>
+  <testcase name="transformerComposite" classname="StringDrinkTest" time="0.0"/>
   <testcase name="stringRecipe" classname="StringDrinkTest" time="0.0"/>
   <testcase name="stringCaseChanger" classname="StringDrinkTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
