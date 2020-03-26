@@ -12,7 +12,7 @@ public class StringReplacer implements StringTransformer{
         String text = drink.getText();
         for (int i = 0; i < text.length(); i++){
             if (actual == text.charAt(i)) ret += change;
-            else ret += actual;
+            else ret += text.charAt(i);
         }
         drink.setText(ret);
     }
