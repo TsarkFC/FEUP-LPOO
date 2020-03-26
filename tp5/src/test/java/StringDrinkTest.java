@@ -28,6 +28,15 @@ public class StringDrinkTest {
         cc.execute(drink);
         assertEquals("AbCd", drink.getText());
     }
+
+    @Test
+    public void stringReplacer() {
+        StringDrink drink = new StringDrink("ABCDABCD");
+        StringReplacer sr = new StringReplacer('A', 'X');
+        sr.execute(drink);
+        assertEquals("XBCDXBCD", drink.getText());
+    }
+
     @Test
     public void stringRecipe() {
         StringDrink drink = new StringDrink( "AbCd-aBcD");
@@ -203,6 +212,50 @@ public class StringDrinkTest {
 
         // Recipe is only ordered here
         stringBar.startHappyHour();
+        assertEquals("dCbX-DcBa", drink.getText());
+    }
+
+    @Test
+    public void ferengiAlreadyOpened() {
+        StringBar stringBar = new StringBar();
+        StringDrink drink = new StringDrink("AbCd-aBcD");
+        StringRecipe recipe = getRecipe();
+
+        Ferengi client = new Ferengi();
+
+        // Recipe is ordered immediately
+        stringBar.startHappyHour();
+        client.wants(drink, recipe, stringBar);
+        assertEquals("dCbX-DcBa", drink.getText());
+    }
+
+    @Test
+    public void ferengiStartClosed() {
+        StringBar stringBar = new StringBar();
+        StringDrink drink = new StringDrink("AbCd-aBcD");
+        StringRecipe recipe = getRecipe();
+
+        Ferengi client = new Ferengi();
+        stringBar.addObserver(client); // this is important!
+
+        client.wants(drink, recipe, stringBar);
+        assertEquals("AbCd-aBcD", drink.getText());
+
+        // Recipe is only ordered here
+        stringBar.startHappyHour();
+        assertEquals("dCbX-DcBa", drink.getText());
+    }
+
+    @Test
+    public void romulan() {
+        StringBar stringBar = new StringBar();
+        StringDrink drink = new StringDrink("AbCd-aBcD");
+        StringRecipe recipe = getRecipe();
+
+        Romulan client = new Romulan();
+
+        // Recipe is ordered immediately
+        client.wants(drink, recipe, stringBar);
         assertEquals("dCbX-DcBa", drink.getText());
     }
 }
