@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StringDrinkTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-03-26T17:57:08" hostname="joao-XPS-13-9380" time="0.026">
+  <properties/>
+  <testcase name="stringDrink" classname="StringDrinkTest" time="0.001"/>
+  <testcase name="stringInverter" classname="StringDrinkTest" time="0.001"/>
+  <testcase name="stringRecipe" classname="StringDrinkTest" time="0.0"/>
+  <testcase name="stringCaseChanger" classname="StringDrinkTest" time="0.023"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
