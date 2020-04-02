@@ -12,4 +12,9 @@ public class StringCaseChanger implements StringTransformer{
         }
         drink.setText(ret);
     }
+
+    @Override
+    public void undo(StringDrink drink) {
+        execute(drink);
+    }
 }

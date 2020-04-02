@@ -10,4 +10,6 @@ public class StringTransformerGroup implements StringTransformer{
     public void execute(StringDrink drink){
         for (StringTransformer t : trans) t.execute(drink);
     }
+
+    public void undo(StringDrink drink) { for (StringTransformer t : trans) t.undo(drink); }
 }

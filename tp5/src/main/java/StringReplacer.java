@@ -16,4 +16,15 @@ public class StringReplacer implements StringTransformer{
         }
         drink.setText(ret);
     }
+
+    @Override
+    public void undo(StringDrink drink) {
+        char save_ac = actual;
+        char save_chan = change;
+        actual = save_chan;
+        change = save_ac;
+        execute(drink);
+        actual = save_ac;
+        change = save_chan;
+    }
 }
