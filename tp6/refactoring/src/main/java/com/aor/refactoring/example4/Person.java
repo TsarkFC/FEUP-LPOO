@@ -18,14 +18,4 @@ public class Person {
     public String getPhone() {
         return phone;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        return this == o;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, phone);
-    }
 }
