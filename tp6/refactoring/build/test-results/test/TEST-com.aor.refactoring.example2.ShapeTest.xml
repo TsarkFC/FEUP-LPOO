@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.refactoring.example2.ShapeTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-04-02T18:30:10" hostname="joao-XPS-13-9380" time="0.307">
+<testsuite name="com.aor.refactoring.example2.ShapeTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-04-02T20:18:37" hostname="joao-XPS-13-9380" time="0.352">
   <properties/>
   <testcase name="getAreaRectangle" classname="com.aor.refactoring.example2.ShapeTest" time="0.0"/>
   <testcase name="getPerimeterCircle" classname="com.aor.refactoring.example2.ShapeTest" time="0.0"/>
-  <testcase name="drawCircle" classname="com.aor.refactoring.example2.ShapeTest" time="0.302"/>
+  <testcase name="drawCircle" classname="com.aor.refactoring.example2.ShapeTest" time="0.347"/>
   <testcase name="getAreaCircle" classname="com.aor.refactoring.example2.ShapeTest" time="0.0"/>
   <testcase name="getPerimeterRectangle" classname="com.aor.refactoring.example2.ShapeTest" time="0.0"/>
   <testcase name="drawRectangle" classname="com.aor.refactoring.example2.ShapeTest" time="0.003"/>
