@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.aor.refactoring.example1.OrderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-04-02T20:18:38" hostname="joao-XPS-13-9380" time="0.003">
+<testsuite name="com.aor.refactoring.example1.OrderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-04-02T22:29:08" hostname="joao-XPS-13-9380" time="0.002">
   <properties/>
-  <testcase name="printOrder" classname="com.aor.refactoring.example1.OrderTest" time="0.002"/>
+  <testcase name="printOrder" classname="com.aor.refactoring.example1.OrderTest" time="0.001"/>
   <testcase name="isElegibleForFreeDelivery" classname="com.aor.refactoring.example1.OrderTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
