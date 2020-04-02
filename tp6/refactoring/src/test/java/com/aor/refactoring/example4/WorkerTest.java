@@ -33,7 +33,7 @@ public class WorkerTest {
 
     @Test
     public void testClient() {
-        Client client = new Client("John Doe", "+1 222-22222");
+        Person client = new Person("John Doe", "+1 222-22222");
         assertEquals("John Doe", client.getName());
         assertEquals("+1 222-22222", client.getPhone());
     }
