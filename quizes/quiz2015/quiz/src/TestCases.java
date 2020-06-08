@@ -109,4 +109,5 @@ public class TestCases {
         Facility f = b104;
         assertTrue(f.canEnter(u1));
     }
+
 }
